@@ -7,8 +7,8 @@
       "test": "python3 ./scripts/test.py",
       "dev": "nw src/",
       "prod": "nwbuild --platforms win64,osx64,linux64,linux32 --buildDir dist/ src/",
-      "django-setup": "python3 ./tools/unix/py/django-setup.py;",
-      "gulp-setup": "python3 ./tools/unix/py/gulp-setup.py;",
+      "django-setup": "python3 ./automate/tools/unix/py/django-setup.py;",
+      "gulp-setup": "touch gulpfile.js; sudo python3 ./automate/tools/unix/py/gulp-setup.py;",
       "git-rm":"rm -rf .git"
     },
     "repository": {

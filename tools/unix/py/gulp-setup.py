@@ -25,15 +25,6 @@ def install_gulp_save_dev():
     cmd = 'npm install --save-dev gulp;'
     os.system(cmd)
 
-def create_gulp_file():
-    # creating gulp file
-    print("\ncreating gulp file...\n")
-    cmd = 'touch gulpfile.js;'
-    os.system(cmd)
-
-    print("\nFor usage : https://gulpjs.com/docs/en/getting-started/quick-start\n")
-    print("\nYou will find project specefic gulp files unser automate/resources folder.\n Just copy the content in gulpfile.js\n\n")
-
 
 # Install
 
@@ -41,19 +32,20 @@ def install():
     check_node_and_npm()
     install_gulp_cli()
     install_gulp_save_dev()
-    create_gulp_file()
+  
 
 # Setup
 is_gulp_cli = input("Do you want to update gulp cli (y or n)\n")
 
 if is_gulp_cli == 'y' or is_gulp_cli == 'y':
     uninstall_global_gulp()
-    install()
-    
 
-elif is_gulp_cli == 'n' or is_gulp_cli == 'N':
-    print("Okay, It's already updated, got it...\n")
-    install()
+install()
+
+print("\nFor usage : https://gulpjs.com/docs/en/getting-started/quick-start\n")
+print("\nYou will find project specefic gulp files unser automate/resources folder.\n Just copy the content in gulpfile.js\n\n")
+
+
 
 
 
