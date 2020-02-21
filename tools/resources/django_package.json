@@ -9,7 +9,9 @@
       "prod": "nwbuild --platforms win64,osx64,linux64,linux32 --buildDir dist/ src/",
       "django-setup": "python3 ./automate/tools/unix/py/django-setup.py;",
       "gulp-setup": "touch gulpfile.js; sudo python3 ./automate/tools/unix/py/gulp-setup.py;",
-      "git-rm":"rm -rf .git"
+      "git-rm":"rm -rf .git",
+      "git-local-to-remote":"git remote add origin 'replace me with your remote repository URL after creating git repo (empty repo with no file i.e readne file)';",
+      "git-push-remote":"git push -u origin master"
     },
     "repository": {
       "type": "git",
